@@ -21,7 +21,7 @@ automations:
       - action: add-comment@v1
         args:
           comment: |
-            {{ repo | codeExperts(gt=10) }}
+            {{ repo | explainCodeExperts(gt=10) }}
 
 # The next function calculates the estimated time to review and makes it available in the automation above.
 calc:
