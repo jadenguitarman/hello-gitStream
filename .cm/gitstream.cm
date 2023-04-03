@@ -10,8 +10,9 @@ automations:
       - true
     run:
       - action: add-label@v1
+      # calc.etr is defined in the last section of this example
         args:
-          label: "{{ calc.etr }} min review" # calc.etr is defined in the last section of this example
+          label: "{{ calc.etr }} min review"
           color: {{ 'E94637' if (calc.etr >= 20) else ('FBBD10' if (calc.etr >= 5) else '36A853') }}
   # Post a comment that lists the best experts for the files that were modified.
   code_experts:
