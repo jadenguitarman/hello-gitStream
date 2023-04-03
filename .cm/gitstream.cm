@@ -10,7 +10,7 @@ automations:
       - true
     run:
       - action: add-label@v1
-      # calc.etr is defined in the last section of this example
+      # etr is defined in the last section of this example
         args:
           label: "{{ calc.etr }} min review"
           color: {{ 'E94637' if (calc.etr >= 20) else ('FBBD10' if (calc.etr >= 5) else '36A853') }}
@@ -20,6 +20,7 @@ automations:
       - true
     run:
       - action: add-comment@v1
+      # More info about explainCodeExperts: https://docs.gitstream.cm/filter-functions/#explaincodeexperts
         args:
           comment: |
             {{ repo | explainCodeExperts(gt=10) }}
