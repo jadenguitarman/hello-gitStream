@@ -10,6 +10,9 @@ automations:
       - action: require-reviewers@v1
         args:
           reviewers: [blp-test-dev/security]
+      - action: add-reviewers@v1
+        args:
+          reviewers: [blp-test-dev/security]
   double_review:
     if:
       - {{ files | match(regex=r/agent\//) | some }}
