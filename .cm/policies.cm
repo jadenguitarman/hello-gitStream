@@ -1,6 +1,7 @@
 # -*- mode: yaml -*-
-  manifest:
-    version: 1.0
+manifest:
+  version: 1.0
+    
 automations:
   security_review:
     if:
