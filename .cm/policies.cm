@@ -7,9 +7,6 @@ automations:
     if:
       - {{ files | match(regex=r/auth\//) | some }}
     run:
-      - action: require-reviewers@v1
-        args:
-          reviewers: [blp-test-dev/security]
       - action: add-reviewers@v1
         args:
           reviewers: [blp-test-dev/security]
