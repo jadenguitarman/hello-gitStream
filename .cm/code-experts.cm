@@ -34,7 +34,7 @@ automations:
         args:
           comment: |
             {{ repo | explainCodeExperts(gt=10) }}
-	
+
   # Require additional reviewers for large PRs. 
   large_review:
     # If 10 or more files are modified and the estimated review time is 30 minutes or more.
