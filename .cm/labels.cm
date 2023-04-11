@@ -22,8 +22,8 @@ automations:
     # when there is no corresponding change in the tests directory
     # Update "lib|include" and "tests" to match your repository's file structure
     if:
-      - {{ files | match(regex=r/\/(lib|include)\//) | some }}
-      - {{ files | match(regex=r/\/(tests)\//) | nope }}
+      - {{ files | match(regex=r/\(lib|include)\//) | some }}
+      - {{ files | match(regex=r/\tests\//) | nope }}
     run: 
       - action: add-label@v1
         args:
