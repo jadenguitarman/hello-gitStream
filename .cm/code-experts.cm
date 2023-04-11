@@ -17,7 +17,7 @@ automations:
           approvals: 2
       - action: add-reviewers@v1
         args:
-          reviewers: [blp-test-dev/security]
+          reviewers: [blp-test-dev/release]
 
   # Assign up to 2 reviewers based on highest code expertise. 
   assign_code_experts:
