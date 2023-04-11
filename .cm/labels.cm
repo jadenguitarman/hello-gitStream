@@ -23,7 +23,7 @@ automations:
     # Update "lib|include" and "tests" to match your repository's file structure
     if:
       - {{ files | match(regex=r/\/(lib|include)\//) }}
-      - {{ files | match(regex=r/[^a-zA-Z0-9](tests)[^a-zA-Z0-9]/) | nope }}
+      - {{ files | match(regex=r/\/(tests)\//) | nope }}
     run: 
       - action: add-label@v1
         args:
