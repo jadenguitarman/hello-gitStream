@@ -14,7 +14,7 @@ automations:
       # Modify `my_organization/dev-leads` to match your organization.
       - action: add-reviewers@v1
         args:
-          reviewers: [blp-test-dev/release]
+          reviewers: [blp-test-dev/security]
       - action: set-required-approvals@v1
         args:
           approvals: 2
