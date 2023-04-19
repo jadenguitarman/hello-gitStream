@@ -20,7 +20,7 @@ automations:
       - action: add-label@v1
         args:
           label: "security"
-          color: #FBBD10
+          color: '#FBBD10'
       - action: set-required-approvals@v1
         args:
           approvals: 2
@@ -42,7 +42,7 @@ automations:
       - action: add-label@v1
         args:
           label: "new-endpoint"
-          color: #0373fc
+          color: '#0373fc'
   fake_it:
     if:
       - true
@@ -50,4 +50,4 @@ automations:
       - action: add-label@v1
         args:
           label: "10 min review"
-          color: #FBBD10
+          color: '#FBBD10'
