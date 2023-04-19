@@ -5,7 +5,7 @@ manifest:
 automations:
   security_review:
     if:
-      - {{ files | match(regex=r/src/app/auth\//) | some }}
+      - {{ files | match(regex=r/src\/app\/auth\//) | some }}
     run:
       - action: require-reviewers@v1
         args:
@@ -27,7 +27,7 @@ automations:
   new_endpoint_review:
     # Note: this isn't setup to evaluate if the PR is an addition only.
     if:
-      - {{ files | match(regex=r/src/services/openapi\//) | some }}
+      - {{ files | match(regex=r/src\/services\/openapi\//) | some }}
     run:
       - action: require-reviewers@v1
         args:
