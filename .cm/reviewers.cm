@@ -5,7 +5,7 @@ manifest:
 automations:
   security_review:
     if:
-      - {{ files | match(regex=r/src/auth\//) | some }}
+      - {{ files | match(regex=r/src/app/auth\//) | some }}
     run:
       - action: require-reviewers@v1
         args:
@@ -16,7 +16,7 @@ automations:
       - action: add-comment@v1
         args:
           comment: |
-            This PR touches sensitive code in /src/auth and requires a review from the security team.
+            This PR touches sensitive code in /src/app/auth and requires a review from the security team.
       - action: add-label@v1
         args:
           label: "security"
