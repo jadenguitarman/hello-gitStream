@@ -14,9 +14,9 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: {{ repo | codeExperts(gt=10) }}
+          reviewers: {{ repo | codeExperts() }}
       - action: add-comment@v1
         args:
           comment: |
-            {{ repo | explainCodeExperts(gt=10) }}
+            {{ repo | explainCodeExperts() }}
   
