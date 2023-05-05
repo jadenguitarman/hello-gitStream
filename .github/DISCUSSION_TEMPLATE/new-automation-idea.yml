@@ -15,6 +15,14 @@ body:
       render: bash
     validations:
       required: true
+    - type: textarea
+    id: alternatives
+    attributes:
+      label: Have you tried any alternative solutions?
+      description: "Please provide info about any alternatives you've tried and why they don't solve your problem."
+      render: bash
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
