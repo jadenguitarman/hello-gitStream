@@ -27,6 +27,13 @@ body:
       label: Additional Context
       description: "Provide screenshots, links to examples, and any other context that could help us understand why this automation is important."
       render: bash
+  - type: input
+    id: more-context
+    attributes:
+      label: Suggestions
+      description: A description about suggestions to help you
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
