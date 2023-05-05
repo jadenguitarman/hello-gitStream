@@ -8,7 +8,7 @@ body:
   - type: textarea
     id: improvements
     attributes:
-      label: "How this automation would help"
+      label: Overview
       description: "Is your automation request related to a problem you're facing? Please describe the challenge this automation would help solve."
       value: |
         1.
