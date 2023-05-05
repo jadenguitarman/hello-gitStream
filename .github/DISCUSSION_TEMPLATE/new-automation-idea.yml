@@ -21,7 +21,7 @@ body:
       render: bash
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: context
     attributes:
       label: Additional Context
