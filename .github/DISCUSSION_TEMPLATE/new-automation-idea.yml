@@ -1,10 +1,10 @@
-title: "Idea: "
+title: "Automation Idea: "
 labels: ["New Automation Idea"]
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
+        Thank you for taking the time to contribute your gitStream automation idea! This template will walk you through all the information we need to evaluate your request and prioritize it for the library. Please fill out each section according to the instructions found in the comments.
   - type: textarea
     id: improvements
     attributes:
