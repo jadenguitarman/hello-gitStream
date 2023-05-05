@@ -6,15 +6,12 @@ body:
       value: |
         Thank you for taking the time to contribute your gitStream automation idea! This template will walk you through all the information we need to evaluate your request and prioritize it for the library. Please fill out each section according to the instructions found in the comments.
   - type: textarea
-    id: improvements
+    id: overview
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: Overview
+      description: "Please describe the challenge this automation would help solve. Is it related to a problem you're facing?"
       value: |
-        1.
-        2.
-        3.
-        ...
+        Insert your overview here
       render: bash
     validations:
       required: true
