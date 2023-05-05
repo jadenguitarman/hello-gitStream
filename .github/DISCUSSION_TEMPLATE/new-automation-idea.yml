@@ -15,7 +15,7 @@ body:
       render: bash
     validations:
       required: true
-    - type: textarea
+  - type: textarea
     id: alternatives
     attributes:
       label: Have you tried any alternative solutions?
