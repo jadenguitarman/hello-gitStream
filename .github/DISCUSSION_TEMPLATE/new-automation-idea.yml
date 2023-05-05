@@ -21,6 +21,12 @@ body:
       render: bash
     validations:
       required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: "Provide screenshots, links to examples, and any other context that could help us understand why this automation is important."
+      render: bash
   - type: markdown
     attributes:
       value: |
