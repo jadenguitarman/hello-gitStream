@@ -10,8 +10,6 @@ body:
     attributes:
       label: Overview
       description: "Please describe the challenge this automation would help solve. Is it related to a problem you're facing?"
-      value: |
-        Insert your overview here
       render: bash
     validations:
       required: true
