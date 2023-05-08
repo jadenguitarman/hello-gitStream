@@ -17,5 +17,5 @@ setting:
   # Set to true to enable some debug output to see variable values
   OUTPUT_PR: true
 
-  my_exp:
+my_exp:
   title: "# {{ pr.title }}"
