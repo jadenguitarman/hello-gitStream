@@ -35,3 +35,5 @@ Automation Actions:
 ## Other
 <!-- Please answer yes or no -->
 Do you want us to recognize your GitHub username on the automation library page?
+
+Have you tested this example to confirm it performs as expected?
