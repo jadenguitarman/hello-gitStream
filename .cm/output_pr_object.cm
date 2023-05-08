@@ -1,7 +1,7 @@
 # -*- mode: yaml -*-
 
 manifest:
-  version: 1.0
+version: 1.0
 
 automations:
   output_pr_object:
