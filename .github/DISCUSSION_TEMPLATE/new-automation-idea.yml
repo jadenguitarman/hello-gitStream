@@ -10,7 +10,6 @@ body:
     attributes:
       label: Overview
       description: "Please describe the challenge this automation would help solve. Is it related to a problem you're facing?"
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -18,7 +17,6 @@ body:
     attributes:
       label: Have you tried any alternative solutions?
       description: "Please provide info about any alternatives you've tried and why they don't solve your problem."
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -26,7 +24,6 @@ body:
     attributes:
       label: Additional Context
       description: "Provide screenshots, links to examples, and any other context that could help us understand why this automation is important."
-      render: bash
   - type: input
     id: more-context
     attributes:
