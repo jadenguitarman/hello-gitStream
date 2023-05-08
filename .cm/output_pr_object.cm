@@ -15,7 +15,12 @@ automations:
           - Approvals: {{ pr.approvals | dump | safe }}
           - Author: {{ pr.author }}
           - Author teams ({{ pr.author_teams | length }}): {{ pr.author_teams }}
-          - Checks ({{ pr.checks | length }}): {{ pr.checks }}
+          - Checks ({{ pr.checks | length }}):
+          {% for check in pr.checks %}
+            - {{ check.name }}
+            - {{ check.status }}
+            - {{ check.conclusion }}
+          {% endfor %}
           - Created at: {{ pr.created_at }}
           - Draft: {{ pr.draft }}
           - Description: {{ pr.description }}
