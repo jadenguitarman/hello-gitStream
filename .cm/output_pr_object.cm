@@ -25,8 +25,8 @@ automations:
           - Draft: {{ pr.draft }}
           - Description: {{ pr.description }}
           - General comments ({{ pr.general_comments | length }}):
-          {% for comment in pr.general_comments %}
-            - {{ comment.content }}
+          {% for item in pr.general_comments %}
+            - {{ item.content }}
           {% endfor %}
           - Labels: ({{ pr.labels }})
           - Line comments ({{ pr.line_comments | length }}): {{ pr.line_comments | dump | safe }}
