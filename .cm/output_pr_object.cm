@@ -19,3 +19,5 @@ setting:
 
 my_exp:
   title: "# {{ pr.title }}"
+  
+  byline: "{{ pr.author_name }}"
