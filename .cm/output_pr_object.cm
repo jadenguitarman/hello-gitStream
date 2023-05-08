@@ -12,7 +12,7 @@ automations:
       args:
         comment: |
           {{ my_exp.title }}
-          {{ pr.pr_description }}
+          {{ my_exp.pr_description }}
           {{ my_exp.byline }}
           {{ my_exp.updated }}
 
