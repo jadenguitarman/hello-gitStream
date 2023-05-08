@@ -12,7 +12,7 @@ automations:
       args:
         comment: |
           {{ my_exp.title }}
-          {{ pr.description }}
+          {{ pr.pr_description }}
           {{ my_exp.byline }}
           {{ my_exp.updated }}
 
@@ -23,7 +23,7 @@ setting:
 my_exp:
   title: "# {{ pr.title }}"
 
-  description: "{{ pr.description }}"
+  pr_description: "{{ pr.description }}"
 
   byline: "Authored by {{ pr.author }} at {{ pr.created_at }}."
   
