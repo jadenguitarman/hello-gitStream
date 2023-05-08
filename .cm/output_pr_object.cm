@@ -19,4 +19,3 @@ setting:
 
 my_exp:
   title: "# {{ pr.title }}"
-  descriptiond: "{{ pr.description }}"
