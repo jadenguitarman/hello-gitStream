@@ -11,24 +11,29 @@ automations:
     - action: add-comment@v1
       args:
         comment: |
-        pr
-        - Approvals: {{ pr.approvals | dump | safe }}
-        - Author: {{ pr.author }}
-        - Author teams ({{ pr.author_teams | length }}): {{ pr.author_teams }}
-        - Checks ({{ pr.checks | length }}): {{ pr.checks }}
-        - Created at: {{ pr.created_at }}
-        - Draft: {{ pr.draft }}
-        - Description: {{ pr.description }}
-        - General comments ({{ pr.general_comments | length }}): {{ pr.general_comments }}
-        - Labels: ({{ pr.labels }})
-        - Line comments ({{ pr.line_comments | length }}): {{ pr.line_comments | dump | safe }}
-        - Provider: {{ pr.provider | dump | safe }}
-        - Reviewers: {{ pr.reviewers | dump | safe }}
-        - Status: {{ pr.status }}
-        - Target: {{pr.target }}
-        - Title: {{ pr.title }}
-        - Requested changes: {{ pr.requested_changes }}
-        - Updated at: {{ pr.updated_at }}
+          pr
+          - Approvals: {{ pr.approvals | dump | safe }}
+          - Author: {{ pr.author }}
+          - Author teams ({{ pr.author_teams | length }}): {{ pr.author_teams }}
+          - Checks ({{ pr.checks | length }}):
+          {% for check in pr.checks %}
+            - {{ check.name }}
+              - {{ check.status }}
+              - {{ check.conclusion }}
+          {% endfor %}
+          - Created at: {{ pr.created_at }}
+          - Draft: {{ pr.draft }}
+          - Description: {{ pr.description }}
+          - General comments ({{ pr.general_comments | length }}): {{ pr.general_comments }}
+          - Labels: ({{ pr.labels }})
+          - Line comments ({{ pr.line_comments | length }}): {{ pr.line_comments | dump | safe }}
+          - Provider: {{ pr.provider | dump | safe }}
+          - Reviewers: {{ pr.reviewers | dump | safe }}
+          - Status: {{ pr.status }}
+          - Target: {{pr.target }}
+          - Title: {{ pr.title }}
+          - Requested changes: {{ pr.requested_changes }}
+          - Updated at: {{ pr.updated_at }}
 
 setting:
   # Set to true to enable some debug output to see variable values
