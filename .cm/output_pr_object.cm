@@ -18,4 +18,4 @@ setting:
   OUTPUT_PR: true
 
   my_exp:
-  title: \# {{ pr.title }}
+  title: "# {{ pr.title }}"
