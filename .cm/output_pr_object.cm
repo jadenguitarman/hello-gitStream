@@ -18,8 +18,8 @@ automations:
           - Checks ({{ pr.checks | length }}):
           {% for check in pr.checks %}
             - {{ check.name }}
-            - {{ check.status }}
-            - {{ check.conclusion }}
+              - {{ check.status }}
+              - {{ check.conclusion }}
           {% endfor %}
           - Created at: {{ pr.created_at }}
           - Draft: {{ pr.draft }}
