@@ -12,6 +12,8 @@ automations:
       args:
         comment: |
           {{ my_exp.title }}
+          {{ my_exp.description }}
+          {{ my_exp.title }}
 
 setting:
   # Set to true to enable some debug output to see variable values
