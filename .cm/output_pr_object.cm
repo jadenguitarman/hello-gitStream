@@ -25,6 +25,10 @@ automations:
           - Draft: {{ pr.draft }}
           - Description: {{ pr.description }}
           - General comments ({{ pr.general_comments | length }}): {{ pr.general_comments }}
+          {% for comment in pr.general_comments %}
+            - {{ comment.commenter }} - {{ comment.state }} at {{ comment.created_at }}, last updated: {{ comment.updated_at }}
+              - {{ comment.content }}
+          {% endfor %}
           - Labels: ({{ pr.labels }})
           - Line comments ({{ pr.line_comments | length }}): {{ pr.line_comments | dump | safe }}
           - Provider: {{ pr.provider | dump | safe }}
