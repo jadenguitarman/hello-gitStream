@@ -12,6 +12,8 @@ automations:
       args:
         comment: |
           {{ my_exp.title }}
+          {{ my_exp.description }}
+          {{ my_exp.title }}
 
 setting:
   # Set to true to enable some debug output to see variable values
@@ -19,5 +21,5 @@ setting:
 
 my_exp:
   title: "# {{ pr.title }}"
-  description: " {{ pr.description }} "
-  byline: " Authored by {{ pr.author }} at {{ pr.created_at }}. Last updated: {{ pr.updated_at }}"
+  description: "{{ pr.description }}"
+  byline: "Authored by {{ pr.author }} at {{ pr.created_at }}. Last updated {{ pr.updated_at }}"
