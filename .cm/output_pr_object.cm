@@ -14,7 +14,6 @@ automations:
           {{ my_exp.title }}
           {{ my_exp.pr_description }}
           {{ my_exp.byline }}
-          {{ my_exp.updated }}
 
 setting:
   # Set to true to enable some debug output to see variable values
@@ -25,6 +24,6 @@ my_exp:
 
   pr_description: {{ pr.description }}
 
-  byline: "<sup><sub>Authored by" {{ pr.author }} "at" {{ pr.created_at }}."</sub></sup>"
-  
-  updated: "<sub>Last updated {{ pr.updated_at }}</sub>"
+  byline: |
+    <sup><sub>Authored by {{ pr.author }} at {{ pr.created_at }}.</sub></sup>
+    "<sub>Last updated {{ pr.updated_at }}</sub>"
