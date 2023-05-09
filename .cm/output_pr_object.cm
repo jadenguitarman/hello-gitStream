@@ -13,7 +13,7 @@ automations:
         comment: |
           {{ my_exp.title }}
           {{ my_exp.pr_description }}
-          {{ my_exp.byline }}
+          {{ my_exp.byline | dump | safe }}
 
 setting:
   # Set to true to enable some debug output to see variable values
