@@ -25,6 +25,6 @@ my_exp:
 
   pr_description: {{ pr.description }}
 
-  byline: "<sub>Authored by {{ pr.author }} at {{ pr.created_at }}.</sub>"
+  byline: <sub>Authored by {{ pr.author }} at {{ pr.created_at }}.</sub>
   
   updated: "<sub>Last updated {{ pr.updated_at }}</sub>"
