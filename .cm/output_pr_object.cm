@@ -26,5 +26,5 @@ my_exp:
   pr_description: {{ pr.description }}
 
   byline: |
-    Authored by `{{ pr.author }}` at `{{ pr.created_at }}`
+    Authored by `{{ pr.author }}` at `{{ pr.created_at }}`.
     Last updated 
