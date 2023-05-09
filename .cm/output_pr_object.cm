@@ -23,7 +23,7 @@ setting:
 my_exp:
   title: "# {{ pr.title }}"
 
-  pr_description: "{{ pr.description }}"
+  pr_description: {{ pr.description }}
 
   byline: "Authored by {{ pr.author }} at {{ pr.created_at }}."
   
