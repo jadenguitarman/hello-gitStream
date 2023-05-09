@@ -27,4 +27,4 @@ my_exp:
 
   byline: |
     Authored by `{{ pr.author }}` at `{{ pr.created_at }}`.
-    Last updated `{{ pr.updated_at }}`
+#    Last updated `{{ pr.updated_at }}`
