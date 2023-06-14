@@ -20,6 +20,6 @@ automations:
 
 githubActions:
   - name: mobile-build
-    directories: /src/android
+    directories: src/android
     workflow: 'https://api.github.com/repos/blp-test-dev/hello-gitstream/actions/workflows/mobile.yml/dispatches' 
   
