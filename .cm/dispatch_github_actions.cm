@@ -7,7 +7,7 @@ automations:
   {% for item in githubActions %}
   dispatch_{{ item.name }}_action:
     if:
-      - {{files | match(item.directories) | some }}
+      - {{files | match('src/android/App.java') | some }}
     run:
       - action: http-request@v1
         args:
@@ -20,6 +20,6 @@ automations:
 
 githubActions:
   - name: mobile-build
-    directories: 'src/android/'
+    directories: src/android/
     workflow: 'https://api.github.com/repos/blp-test-dev/hello-gitstream/actions/workflows/mobile.yml/dispatches' 
   
