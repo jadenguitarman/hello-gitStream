@@ -7,7 +7,7 @@ automations:
   {% for item in githubActions %}
   dispatch_{{ item.name }}_action:
     if:
-      - {{files | match(list=item.directories) | some }}
+      - {{files | match(list={{ item.directories }}) | some }}
     run:
       - action: http-request@v1
         args:
