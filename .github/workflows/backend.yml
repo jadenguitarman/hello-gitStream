@@ -1,4 +1,4 @@
-name: Mobile Build Workflow
+name: Backend Build Workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -8,7 +8,7 @@ on:
     inputs:
       name:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'The Mobile Build Pipeline'
+        description: 'The Backend Build Pipeline'
         # Default value if no value is explicitly provided
         default: 'World'
         # Input has to be provided for the workflow to run
